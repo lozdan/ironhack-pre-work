@@ -165,6 +165,7 @@ function commands(orders, rover){
       switch (orders[i]){
         case "f":
           moveForward(rover);
+          rover.travelLog.push([rover.row, rover.col]);
           break;
 
         case "l":
@@ -177,10 +178,8 @@ function commands(orders, rover){
 
         case "b":
           movingBackwards(rover);
+          rover.travelLog.push([rover.row, rover.col]);
           break;
-
-        default:
-          turnRight(rover);
       }
     }
     

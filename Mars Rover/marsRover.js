@@ -171,6 +171,10 @@ function commands(orders, rover){
           turnLeft(rover);
           break;
 
+        case "r":
+          turnRight(rover);
+          break;
+
         case "b":
           movingBackwards(rover);
           break;
